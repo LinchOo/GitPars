@@ -12,11 +12,13 @@ struct RepositoryCell: View {
     
     var body: some View {
         VStack(alignment: .leading){
-            Text("Repository name:  "+repository.name)
-            if let description = repository.description
-            {
-                Text("Description:  "+description)
-            }
+            
+                Text("Repository name:  "+repository.name)
+                if let description = repository.description
+                {
+                    Text("Description:  "+description)
+                }
+            
         }
     }
 }

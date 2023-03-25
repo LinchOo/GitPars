@@ -27,6 +27,9 @@ class CoreDataService {
     }
     
     // MARK: Public Section
+    func cheker(user: UserModel) -> Bool{
+        if savedEntitys.first(where: { $0.userId == user.id }) != nil { return true } else { return false }
+    }
     
     func favorite(user: UserModel)
     {

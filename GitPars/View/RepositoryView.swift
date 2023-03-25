@@ -12,14 +12,14 @@ struct RepositoryView: View {
     //@StateObject var viewModel = RepositoryViewModel()
     @EnvironmentObject private var viewModel: UsersViewModel
     @State var userName: String
-    
 
     var body: some View {
         List{
             if !viewModel.userRepository.isEmpty{
                 ForEach(viewModel.userRepository, id:\.id) { repository in
                     VStack(alignment: .leading){
-                        RepositoryCell(repository: repository)
+                            RepositoryCell(repository: repository)
+                                .transition(.opacity)
                     }
                 }
             }
