@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct UserModel: Decodable {
+struct UserModel: Decodable, Identifiable {
     
     var id: Int
     var login: String

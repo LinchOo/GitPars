@@ -9,25 +9,28 @@ import SwiftUI
 
 struct FavoriteView: View {
     
-    @StateObject var viewModel: UsersViewModel
+    @EnvironmentObject private var viewModel: UsersViewModel
+    @State var isFavorite = true
     
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
-            if !viewModel.usersArray.isEmpty{
+            if !viewModel.userEntityArray.isEmpty{
                 LazyVGrid(columns: layout, spacing: 35) {
-                    ForEach(viewModel.usersArray.filter{ viewModel.savedItems.contains($0.id)}, id:\.id) { user in
+                    ForEach(viewModel.userEntityArray, id:\.id) { user in
                         VStack(spacing: 15){
                             NavigationLink{
                                 RepositoryView(userName: user.login)
                             }label: {
                                 UserCell(user: user)
                             }
-                            Image(systemName: viewModel.contains(user) ? "star.fill" : "star")
+                            Image(systemName: "star.fill")
                                 .foregroundColor(.yellow)
                                 .onTapGesture {
-                                    viewModel.toggleFav(user: user)
+                                    isFavorite.toggle()
+                                    viewModel.Favorite(user: user)
                                 }
                                 .neumorphismSelectedCircleStyle()
+                            
                         }
                         .padding()
                         .background(RoundedRectangle(cornerRadius: 25).fill(Color("Background")))
@@ -35,20 +38,23 @@ struct FavoriteView: View {
                         .overlay {
                             RoundedRectangle(cornerRadius: 25)
                                 .stroke(gradient, lineWidth: 2)
-                                .opacity(viewModel.contains(user) ? 1 : 0)
+                                .opacity(isFavorite ? 1 : 0)
                             
                         }
-                        .animation(Animation.easeInOut(duration: 0.35), value: viewModel.contains(user))
+                        .animation(Animation.easeInOut(duration: 0.35), value: isFavorite)
                     }
                 }
             }
             else {
-                LazyVGrid(columns: layout, spacing: 20) {
-                    ProgressView()
-                    ProgressView()
-                    ProgressView()
-                    ProgressView()
+                VStack(alignment: .center){
+                    Text("Add some one to favorit's")
+                        .font(.title)
+                        .minimumScaleFactor(0.6)
+                        .fontWeight(.bold)
+                        .padding()
+                    
                 }
+                .frame(maxWidth: .infinity,maxHeight: .infinity)
             }
         }
         .background(

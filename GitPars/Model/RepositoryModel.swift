@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct RepositoryModel : Decodable {
+struct RepositoryModel : Decodable, Identifiable{
     
     var id: Int
     var name: String

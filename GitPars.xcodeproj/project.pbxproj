@@ -18,11 +18,17 @@
 		4F50FF2F29C9BFAA0011D54C /* RepositoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F50FF2E29C9BFAA0011D54C /* RepositoryViewModel.swift */; };
 		4F50FF3129C9BFEC0011D54C /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F50FF3029C9BFEC0011D54C /* UserCell.swift */; };
 		4F50FF3329C9BFF70011D54C /* RepositoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F50FF3229C9BFF70011D54C /* RepositoryCell.swift */; };
-		4F50FF3629C9C0460011D54C /* JsonPars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F50FF3529C9C0460011D54C /* JsonPars.swift */; };
 		4F50FF3929C9C08D0011D54C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F50FF3829C9C08D0011D54C /* HomeView.swift */; };
 		4F50FF3B29C9C0A60011D54C /* UsersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F50FF3A29C9C0A60011D54C /* UsersViewModel.swift */; };
-		4F50FF4129CA0FD50011D54C /* DataBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F50FF4029CA0FD50011D54C /* DataBase.swift */; };
 		4F50FF4329CA1C680011D54C /* DesignExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F50FF4229CA1C680011D54C /* DesignExtension.swift */; };
+		4F50FF4729CC98820011D54C /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F50FF4629CC98820011D54C /* DataService.swift */; };
+		4F50FF4929CC9A550011D54C /* NetWorkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F50FF4829CC9A550011D54C /* NetWorkManager.swift */; };
+		4FD924A829CDA0E40017D8A7 /* UserImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD924A729CDA0E40017D8A7 /* UserImageView.swift */; };
+		4FD924AA29CDA23D0017D8A7 /* ImageDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD924A929CDA23D0017D8A7 /* ImageDataService.swift */; };
+		4FD924AC29CDA3FE0017D8A7 /* UserImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD924AB29CDA3FE0017D8A7 /* UserImageViewModel.swift */; };
+		4FD924AE29CDAC520017D8A7 /* LocalFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD924AD29CDAC510017D8A7 /* LocalFileManager.swift */; };
+		4FD924B129CDB3600017D8A7 /* DataBase.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4FD924AF29CDB3600017D8A7 /* DataBase.xcdatamodeld */; };
+		4FD924B329CDB40B0017D8A7 /* CoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD924B229CDB40B0017D8A7 /* CoreDataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,11 +44,17 @@
 		4F50FF2E29C9BFAA0011D54C /* RepositoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryViewModel.swift; sourceTree = "<group>"; };
 		4F50FF3029C9BFEC0011D54C /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		4F50FF3229C9BFF70011D54C /* RepositoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryCell.swift; sourceTree = "<group>"; };
-		4F50FF3529C9C0460011D54C /* JsonPars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonPars.swift; sourceTree = "<group>"; };
 		4F50FF3829C9C08D0011D54C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		4F50FF3A29C9C0A60011D54C /* UsersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewModel.swift; sourceTree = "<group>"; };
-		4F50FF4029CA0FD50011D54C /* DataBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBase.swift; sourceTree = "<group>"; };
 		4F50FF4229CA1C680011D54C /* DesignExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignExtension.swift; sourceTree = "<group>"; };
+		4F50FF4629CC98820011D54C /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		4F50FF4829CC9A550011D54C /* NetWorkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetWorkManager.swift; sourceTree = "<group>"; };
+		4FD924A729CDA0E40017D8A7 /* UserImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserImageView.swift; sourceTree = "<group>"; };
+		4FD924A929CDA23D0017D8A7 /* ImageDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDataService.swift; sourceTree = "<group>"; };
+		4FD924AB29CDA3FE0017D8A7 /* UserImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserImageViewModel.swift; sourceTree = "<group>"; };
+		4FD924AD29CDAC510017D8A7 /* LocalFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalFileManager.swift; sourceTree = "<group>"; };
+		4FD924B029CDB3600017D8A7 /* DataBase.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataBase.xcdatamodel; sourceTree = "<group>"; };
+		4FD924B229CDB40B0017D8A7 /* CoreDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +123,7 @@
 			children = (
 				4F50FF2329C9BEDA0011D54C /* UserModel.swift */,
 				4F50FF2529C9BEE50011D54C /* RepositoryModel.swift */,
+				4FD924AF29CDB3600017D8A7 /* DataBase.xcdatamodeld */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -118,10 +131,10 @@
 		4F50FF3429C9C0160011D54C /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				4F50FF4029CA0FD50011D54C /* DataBase.swift */,
 				4F50FF3029C9BFEC0011D54C /* UserCell.swift */,
 				4F50FF3229C9BFF70011D54C /* RepositoryCell.swift */,
 				4F50FF4229CA1C680011D54C /* DesignExtension.swift */,
+				4FD924A729CDA0E40017D8A7 /* UserImageView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -129,7 +142,11 @@
 		4F50FF3729C9C04A0011D54C /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				4F50FF3529C9C0460011D54C /* JsonPars.swift */,
+				4F50FF4829CC9A550011D54C /* NetWorkManager.swift */,
+				4F50FF4629CC98820011D54C /* DataService.swift */,
+				4FD924A929CDA23D0017D8A7 /* ImageDataService.swift */,
+				4FD924AD29CDAC510017D8A7 /* LocalFileManager.swift */,
+				4FD924B229CDB40B0017D8A7 /* CoreDataService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -139,6 +156,7 @@
 			children = (
 				4F50FF3A29C9C0A60011D54C /* UsersViewModel.swift */,
 				4F50FF2E29C9BFAA0011D54C /* RepositoryViewModel.swift */,
+				4FD924AB29CDA3FE0017D8A7 /* UserImageViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -215,14 +233,20 @@
 			files = (
 				4F50FF2F29C9BFAA0011D54C /* RepositoryViewModel.swift in Sources */,
 				4F50FF1729C9BC500011D54C /* MainTabBarView.swift in Sources */,
+				4FD924B129CDB3600017D8A7 /* DataBase.xcdatamodeld in Sources */,
 				4F50FF2629C9BEE50011D54C /* RepositoryModel.swift in Sources */,
 				4F50FF2A29C9BF640011D54C /* RepositoryView.swift in Sources */,
+				4F50FF4929CC9A550011D54C /* NetWorkManager.swift in Sources */,
 				4F50FF2429C9BEDA0011D54C /* UserModel.swift in Sources */,
+				4FD924B329CDB40B0017D8A7 /* CoreDataService.swift in Sources */,
 				4F50FF3329C9BFF70011D54C /* RepositoryCell.swift in Sources */,
+				4FD924AE29CDAC520017D8A7 /* LocalFileManager.swift in Sources */,
+				4FD924AA29CDA23D0017D8A7 /* ImageDataService.swift in Sources */,
+				4FD924A829CDA0E40017D8A7 /* UserImageView.swift in Sources */,
 				4F50FF3129C9BFEC0011D54C /* UserCell.swift in Sources */,
-				4F50FF3629C9C0460011D54C /* JsonPars.swift in Sources */,
+				4FD924AC29CDA3FE0017D8A7 /* UserImageViewModel.swift in Sources */,
 				4F50FF3B29C9C0A60011D54C /* UsersViewModel.swift in Sources */,
-				4F50FF4129CA0FD50011D54C /* DataBase.swift in Sources */,
+				4F50FF4729CC98820011D54C /* DataService.swift in Sources */,
 				4F50FF2829C9BF540011D54C /* FavoriteView.swift in Sources */,
 				4F50FF3929C9C08D0011D54C /* HomeView.swift in Sources */,
 				4F50FF4329CA1C680011D54C /* DesignExtension.swift in Sources */,
@@ -427,6 +451,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4FD924AF29CDB3600017D8A7 /* DataBase.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4FD924B029CDB3600017D8A7 /* DataBase.xcdatamodel */,
+			);
+			currentVersion = 4FD924B029CDB3600017D8A7 /* DataBase.xcdatamodel */;
+			path = DataBase.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 4F50FF0929C9BC500011D54C /* Project object */;
 }

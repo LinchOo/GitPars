@@ -8,12 +8,13 @@
 import SwiftUI
 
 struct MainTabBarView: View {
-    @StateObject var viewModel = UsersViewModel()
+    
+    @StateObject private var viewModel = UsersViewModel()
     
     var body: some View {
         TabView{
             NavigationView{
-               HomeView(viewModel: viewModel)
+               HomeView()
             }
             .tabItem {
                 VStack{
@@ -22,7 +23,7 @@ struct MainTabBarView: View {
                 }
             }
             NavigationView{
-                FavoriteView(viewModel: viewModel)
+                FavoriteView()
             }
             .tabItem {
                 VStack{
@@ -30,11 +31,8 @@ struct MainTabBarView: View {
                     Text("Favorites")
                 }
             }
-            .badge(viewModel.savedItems.count)
         }
-        .onAppear{
-            viewModel.fetchUsers()
-        }
+        .environmentObject(viewModel)
     }
 }
 

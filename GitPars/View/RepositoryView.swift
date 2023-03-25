@@ -9,16 +9,18 @@ import SwiftUI
 
 struct RepositoryView: View {
     
-    @StateObject var viewModel = RepositoryViewModel()
-    var userName: String
+    //@StateObject var viewModel = RepositoryViewModel()
+    @EnvironmentObject private var viewModel: UsersViewModel
+    @State var userName: String
+    
+
     var body: some View {
         List{
-            if !viewModel.repositoryArray.isEmpty{
-                ForEach(viewModel.repositoryArray, id:\.id) { repository in
+            if !viewModel.userRepository.isEmpty{
+                ForEach(viewModel.userRepository, id:\.id) { repository in
                     VStack(alignment: .leading){
                         RepositoryCell(repository: repository)
                     }
-                    
                 }
             }
             else {
@@ -32,7 +34,7 @@ struct RepositoryView: View {
         }
         .navigationTitle("Repositorys")
         .onAppear{
-            viewModel.fetchUserRepositorys(userName: userName)
+            viewModel.addRepositorySubscriber(userName: userName)
         }
     }
 }
